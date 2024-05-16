@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% comment %} {% block title %}
+    <h1>LocalLibrary Home, Welcome!!!</h1>
+{% endblock title %} {% endcomment %}
+
+{% block content %}
+    <h1>Local Library Home</h1>
+    <p>
+        Welcome to LocalLibrary, a website developed body
+        <em> Benjamin Okumu </em>
+    </p>
+    <h2>Dynamic content</h2>
+    <p>The Library has the following record counts:</p>
+    <ul>
+        <li><strong>Books:</strong> {{ num_books }}</li>
+        <li><strong>Copies:</strong> {{ num_instances }}</li>
+        <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+        <li><strong>Authors:</strong> {{ num_authors }}</li>
+        <li><strong>Books with word Robinson:</strong> {{ num_books_with_word }}</li>
+    </ul>
+{% endblock content %}
