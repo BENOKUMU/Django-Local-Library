@@ -1,5 +1,14 @@
 .sidebar-nav {
     margin-top: 20px;
-    padding: 0;
+    padding: 1;
     list-style: none;
   }
+
+#logout-form{
+  display: inline;
+}
+
+#logout-form button {
+  padding: 1;
+  margin: 1;
+}
